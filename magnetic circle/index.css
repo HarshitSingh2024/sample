@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: yellow;
+}
+.frame span{
+    height: 5vw;
+    font-size: 3vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    padding: 0 5vw;
+}
+#frames{
+    display: flex;
+    
+}
+.frame{
+    overflow: hidden;
+    height: 5vw;
+    z-index: 2;
+    position: relative;
+}
+#circle{
+    pointer-events: none;
+    z-index: 1;
+    transition: all 0.2s;
+    height: 2vw;
+    top: 0;
+    left: 0;
+    width: 2vw;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    background-color: orangered;
+    border-radius: 50%;
+}
